@@ -4,7 +4,7 @@ import React from "react";
 import axios from "axios";
 import Link from "next/link";
 
-export const getAllPosts = async () => {
+const getAllPosts = async () => {
     const allPosts = await axios.get(
         "https://jsonplaceholder.typicode.com/posts"
     );
