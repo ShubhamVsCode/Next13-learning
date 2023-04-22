@@ -7,7 +7,7 @@ type Params = {
     }
 }
 
-export const getPost = async (blogId: string) => {
+const getPost = async (blogId: string) => {
     const allPosts = await axios.get(
         `https://jsonplaceholder.typicode.com/posts/${blogId}`
     );
