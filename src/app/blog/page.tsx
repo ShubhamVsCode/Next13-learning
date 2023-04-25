@@ -16,6 +16,10 @@ export default async function BlogPage() {
     console.log(allPosts)
 
     return <div className="max-w-4xl m-auto py-10 px-20">
+        <Link href="/blog/detail">
+            Details
+        </Link>
+
         {allPosts?.data?.map((post: { id: string, title: string, body: string }) => (
             <div className="mb-10" key={post?.id}>
                 <Link href={`/blog/${post?.id}`}>
